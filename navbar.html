@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Demo</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f1f2f1;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        background: #f1f2f1;
+      }
+
+      /* Logo */
+      .logo {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      /* Menu */
+      .menu {
+        display: flex;
+        gap: 20px;
+      }
+      .menu a {
+        text-decoration: none;
+        color: #555;
+        font-size: 14px;
+      }
+      .menu a:hover {
+        color: #000;
+      }
+
+      /* Right section */
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .right a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #333;
+      }
+      .btn {
+        background: #333;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .btn:hover {
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">lehoangdung.blog</div>
+
+      <!-- Menu giữa -->
+      <div class="menu">
+        <a href="/">Trang chủ</a>
+        <a href="/myblog.html">Bài viết</a>
+        <a href="#">Album</a>
+        <a href="#">Diễn đàn</a>
+        <a href="#">Giới thiệu</a>
+      </div>
+
+      <!-- Bên phải -->
+      <div class="right">
+        <a href="#">🌐</a>
+        <a href="#">💻</a>
+        <a href="#">Đăng nhập</a>
+        <a href="#" class="btn">Đăng ký</a>
+      </div>
+    </nav>
+  </body>
+</html>
