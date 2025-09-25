@@ -1,0 +1,50 @@
+/* navbar.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f0;
+  padding: 10px 20px;
+}
+
+.navbar-left a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.navbar-left .logo {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .icon {
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.navbar-right a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.navbar-right .btn {
+  background: #333;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+}

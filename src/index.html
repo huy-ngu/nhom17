@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script>
+      // load navbar.html vào tất cả trang
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <div id="navbar"></div>
+    <div class="header">
+      <div class="icon">📖</div>
+      <h1>
+        Chào mừng đến với Blog của<br />
+        chúng tôi
+      </h1>
+      <p>
+        Khám phá các câu chuyện, suy nghĩ và kiến thức chuyên môn từ các tác giả
+        về mọi chủ đề.
+      </p>
+      <div class="buttons">
+        <button class="btn">Đăng ký</button>
+        <button class="btn">Đăng nhập</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <span style="color: rgb(76, 73, 73); font-size: 16px"
+        >Đọc những câu chuyện mới nhất từ cộng đồng của chúng tôi</span
+      >
+      <div class="blog-container">
+        <div class="blog">
+          <img src="../assets/anh1.png" />
+          <span class="auth">👤 MinhKien</span>
+          <div>
+            <span>Sự tai hại của việc theo đuổi tiêu chuẩn sống cao</span>
+          </div>
+        </div>
+        <div class="blog">
+          <img src="../assets/anh2.png" />
+          <span class="auth">👤 MinhKien</span>
+        </div>
+        <div class="blog">
+          <img src="../assets/anh3.png" />
+          <span class="auth">👤 MinhKien</span>
+        </div>
+        <div class="blog">
+          <img src="../assets/anh4.png" />
+          <span class="auth">👤 MinhKien</span>
+        </div>
+        <div class="blog">
+          <img src="../assets/anh5.png" />
+          <span class="auth">👤 MinhKien</span>
+        </div>
+        <div class="blog">
+          <img src="../assets/anh6.png" />
+          <span class="auth">👤 MinhKien</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
